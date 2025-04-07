@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambyno - Développeur Web & Mobile | Créateur d'Agents IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-purple-600">Bambyno</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 transition">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">À Propos</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
+            <a href="#services" class="block py-2 text-gray-700 hover:text-purple-600 transition">Services</a>
+            <a href="#about" class="block py-2 text-gray-700 hover:text-purple-600 transition">À Propos</a>
+            <a href="#contact" class="block py-2 text-gray-700 hover:text-purple-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Transformez vos idées en réalité numérique</h1>
+                <p class="text-xl mb-8">Développeur Web & Mobile spécialisé dans la création de solutions SAAS, d'agents IA et d'automatisations sur mesure.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-white text-purple-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-full text-center transition duration-300">
+                        Me Contacter
+                    </a>
+                    <a href="#services" class="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-3 px-6 rounded-full text-center transition duration-300">
+                        Mes Services
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Développement Web" class="w-64 h-64 floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Mes Services</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">Des solutions technologiques adaptées à vos besoins</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Applications Web & Mobile SAAS</h3>
+                    <p class="text-gray-600">Création de solutions logicielles en tant que service, scalables et performantes, adaptées à votre secteur d'activité.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-robot text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Agents IA & Automatisation</h3>
+                    <p class="text-gray-600">Développement d'agents intelligents et systèmes d'automatisation pour optimiser vos processus métiers.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 service-card transition duration-300">
+                    <div class="text-purple-600 mb-4">
+                        <i class="fas fa-puzzle-piece text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Extensions Navigateur</h3>
+                    <p class="text-gray-600">Conception d'extensions personnalisées pour Chrome, Firefox et autres navigateurs, améliorant votre productivité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="À propos" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold mb-6">À Propos de Bambyno</h2>
+                <p class="text-gray-600 mb-4">Passionné par les technologies web et l'intelligence artificielle, je mets mes compétences au service de vos projets les plus ambitieux.</p>
+                <p class="text-gray-600 mb-6">Avec une approche centrée sur l'utilisateur et une attention particulière portée aux détails, je crée des solutions qui allient performance, élégance et fonctionnalité.</p>
+                <div class="flex flex-wrap gap-4">
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">NextJS</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Flutter</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">N8N</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">FlutterFlow</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">React-Native</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4">Témoignages Clients</h2>
+            <p class="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">Ce que disent mes clients à propos de mon travail</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Très professionnel pourtant la demande était atypique; Je recommande Foudroyant, un grand merci à lui."</p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 text-purple-800 w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4">
+                            EQ
+                        </div>
+                        <div>
+                            <h4 class="font-bold">EQUINTAR</h4>
+                            <p class="text-gray-500 text-sm">Client Comeup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Le developpeur à repondu à mes attentes sur le dévellopement de mon extension. Il est à l'écoute. Je conseil de faire des fichiers word avec votre cahier des charges. Celà permet une meilleur comprehension."</p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 text-purple-800 w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4">
+                            ML
+                        </div>
+                        <div>
+                            <h4 class="font-bold">JeloueML</h4>
+                            <p class="text-gray-500 text-sm">Client Comeup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Toujours aussi rapide et efficace ! Merci . Je conseille vivement"</p>
+                    <div class="flex items-center">
+                        <div class="bg-purple-100 text-purple-800 w-12 h-12 rounded-full flex items-center justify-center font-bold mr-4">
+                            DY
+                        </div>
+                        <div>
+                            <h4 class="font-bold">DjowYett</h4>
+                            <p class="text-gray-500 text-sm">Client Comuep</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="mt-16 bg-purple-50 rounded-xl p-8 max-w-3xl mx-auto">
+                <h3 class="text-2xl font-bold text-center mb-6">Intéressé par mes services ?</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="mailto:contact@bambyno.com" class="flex items-center bg-white hover:bg-gray-100 text-purple-600 font-bold py-3 px-6 rounded-full transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i> contact@bambyno.com
+                    </a>
+                    <a href="https://wa.me/message/PE63FQO747POH1" target="_blank" class="flex items-center bg-white hover:bg-gray-100 text-purple-600 font-bold py-3 px-6 rounded-full transition duration-300">
+                        <i class="fab fa-whatsapp mr-2"></i> Envoyer un message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold">Bambyno</span>
+                    <p class="text-gray-400 mt-2">Développeur Web & Mobile | Créateur d'Agents IA</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Bambyno. Tous droits réservés.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Mentions légales</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
