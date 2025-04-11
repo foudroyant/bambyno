@@ -1,16 +1,22 @@
-import { Bio } from "@/components/bio";
+import FloatingTechIcons from "@/components/FloatingTechIcons/view";
+import ParallaxSection from "@/components/ParallaxSection/view";
+import Testimonials from "@/components/Testimonials/view";
+import About from "@/components/about/view";
+import Contact from "@/components/contact/view";
 import { _Header } from "@/components/header";
-import { Services } from "@/components/services";
-import { Techno } from "@/components/technologies";
+import Hero from "@/components/hero/view";
+import Services from "@/components/services/view";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-    <_Header />
-    <Services></Services>
-    <Bio></Bio>
-    <Techno></Techno>
+    <Hero />
+    <FloatingTechIcons />
+    <Services />
+    <About />
+    <Testimonials />
+    <Contact />
     </>
   );
 }
