@@ -13,6 +13,8 @@ import Image from "next/image";
 import '@n8n/chat/style.css';
 import { createChat } from '@n8n/chat';
 import { useEffect } from 'react';
+import { Projects } from "@/components/projects";
+import ProjectGallery from "@/components/projets/ProjectGallery";
 
 export default function Home() {
 
@@ -23,7 +25,13 @@ export default function Home() {
       mode: 'window',
       chatInputKey: 'chatInput',
       chatSessionKey: 'sessionId',
-      metadata: {},
+      metadata: {
+        title: 'Foudroyant',
+        description: 'L’assistant intelligent de Bambyno',
+        logo: 'https://www.foudroyant.com/wp-content/uploads/2021/03/logo-foudroyant.png',
+        keywords: ['Foudroyant', 'Assistant intelligent', 'Bambyno', 'IA', 'Intelligence Artificielle'],
+        color: '#4A90E2',
+      },
       showWelcomeScreen: false,
       defaultLanguage: 'en',
       initialMessages: [
@@ -38,6 +46,7 @@ export default function Home() {
     <FloatingTechIcons />
     <Services />
     <About />
+    <ProjectGallery />
     <Testimonials />
     <Contact />
     </>

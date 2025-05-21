@@ -56,7 +56,27 @@ export default function Services() {
             </div>
           ))}
         </div>
+
+        {/*<div className="min-h-screen bg-gray-50 p-4">
+          <h1 className="text-2xl font-semibold mb-4">Formulaire</h1>
+          <N8NForm />
+        </div>*/}
       </div>
     </section>
   )
+}
+
+
+// components/N8NForm.tsx
+ function N8NForm() {
+  return (
+    <div className="w-full h-[800px]">
+      <iframe
+        src="https://n8n.bambyno.xyz/form/pitchperfect"
+        title="Formulaire n8n"
+        className="w-full h-full border-none rounded-xl shadow-md"
+        allow="clipboard-write"
+      />
+    </div>
+  );
 }

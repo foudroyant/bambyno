@@ -68,3 +68,70 @@
   animation: progress 1.5s ease-out forwards;
   width: 0%; /* Initial state */
 }
+
+
+
+
+:root {
+	/* Palette principale élégante */
+	--chat--color-primary: #6c47ff;
+	--chat--color-primary-shade-50: #5a3bd4;
+	--chat--color-primary-shade-100: #4a2bb7;
+	--chat--color-secondary: #10b981;
+	--chat--color-secondary-shade-50: #0ea37a;
+
+	--chat--color-white: #ffffff;
+	--chat--color-light: #f9fafb;
+	--chat--color-light-shade-50: #f1f5f9;
+	--chat--color-light-shade-100: #e2e8f0;
+	--chat--color-medium: #cbd5e1;
+	--chat--color-dark: #0f172a;
+	--chat--color-disabled: #94a3b8;
+	--chat--color-typing: #64748b;
+
+	/* Espacement, rayons et animation */
+	--chat--spacing: 1rem;
+	--chat--border-radius: 1rem;
+	--chat--transition-duration: 0.3s;
+
+	--chat--window--width: 420px;
+	--chat--window--height: 640px;
+
+	/* En-tête */
+	--chat--header-height: auto;
+	--chat--header--padding: var(--chat--spacing);
+	--chat--header--background: var(--chat--color-primary);
+	--chat--header--color: var(--chat--color-white);
+	--chat--heading--font-size: 1.25rem;
+	--chat--subtitle--font-size: 0.875rem;
+	--chat--subtitle--line-height: 1.5;
+
+	/* Zone de texte */
+	--chat--textarea--height: 56px;
+
+	/* Messages */
+	--chat--message--font-size: 0.95rem;
+	--chat--message-line-height: 1.6;
+	--chat--message--padding: 0.75rem 1rem;
+	--chat--message--border-radius: 1.25rem;
+
+	--chat--message--bot--background: rgba(255, 255, 255, 0.9);
+	--chat--message--bot--color: #1e293b;
+	--chat--message--bot--border: 1px solid rgba(0, 0, 0, 0.05);
+
+	--chat--message--user--background: var(--chat--color-secondary);
+	--chat--message--user--color: var(--chat--color-white);
+	--chat--message--user--border: none;
+
+	--chat--message--pre--background: rgba(2, 6, 23, 0.05);
+
+	/* Toggle bouton */
+	--chat--toggle--background: var(--chat--color-primary);
+	--chat--toggle--hover--background: var(--chat--color-primary-shade-50);
+	--chat--toggle--active--background: var(--chat--color-primary-shade-100);
+	--chat--toggle--color: var(--chat--color-white);
+	--chat--toggle--size: 64px;
+
+	/* Ombre douce pour modernité */
+	--chat--box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
