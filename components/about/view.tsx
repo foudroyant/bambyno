@@ -16,7 +16,7 @@ export default function About() {
         <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10 fade-in">
           <div className="relative">
             <Image 
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+              src="/Identity.jpg" 
               alt="À propos" 
               width={400}
               height={400}

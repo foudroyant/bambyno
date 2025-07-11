@@ -19,7 +19,7 @@ import ProjectGallery from "@/components/projets/ProjectGallery";
 export default function Home() {
 
   useEffect(() => {
-		createChat({
+		/*createChat({
 			webhookUrl: 'https://n8n.bambyno.xyz/webhook/9d40707f-ae02-43f7-8a6d-70c0a3d0db93/chat',
       target: '#n8n-chat',
       mode: 'window',
@@ -37,7 +37,7 @@ export default function Home() {
       initialMessages: [
         "💡 Bienvenue ! Je suis Foudroyant, l'assistant intelligent de Bambyno. Pouvez poser vos questions sur nos services y compris demander un devis.👋",
       ],
-		});
+		});*/
 	}, []);
 
   return (
